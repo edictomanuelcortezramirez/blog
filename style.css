@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Montserrat Alternates', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+/* font-family: 'Kaushan Script', cursive; */
+/* ---------------------navbar--------------------- */
+/* .nav-new-article {
+} */
+.navbar {
+  font-family: 'Montserrat Alternates', sans-serif;
+  background-image: linear-gradient(to bottom, rgb(186, 183, 183), white);
+}
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: -1px;
+  font-size: 1.5em;
+  font-family: 'Kaushan Script', cursive;
+}
+.navbar-nav {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.collapse {
+  justify-content: center;
+}
+/* ---------------------banner--------------------- */
+.banner {
+  color: rgb(105, 105, 105);
+}
+.banner-content {
+  height: 35em;
+  align-content: center;
+  text-align: center;
+}
+.banner h1 {
+  font-size: 5em;
+  font-weight: 800;
+  line-height: 60%;
+}
+.banner p {
+  font-size: 1.3em;
+  margin: 2em 0 0 0;
+  letter-spacing: 0.5px;
+}
+/* .banner button {
+  margin: 2em 0 0 0;
+} */
+/* ---------------------items--------------------- */
+/* .items {
+  margin: 0.6em 0 2em 0; 
+   text-align: center;
+} */
+/* ---------------item especial--------------- */
+.news .card {
+  width: 855px;
+}
+.news .bg-image {
+  height: 350px;
+}
+.story .bg-image {
+  height: 350px;
+}
+/* ---------------------card--------------------- */
+.card {
+  border-radius: 0;
+  width: 415px;
+  color: white;
+  justify-content: center;
+  position: relative;
+}
+.card-body {
+  margin-top: 11%;
+  position: relative;
+  z-index: 1;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+.card .bg-image {
+  border-radius: 0;
+  height: 350px;
+  background-size: cover;
+}
+.card-title {
+  font-size: 2em;
+  font-weight: 600;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.418);
+  z-index: 0;
+}
+
+.AddCardButton {
+  text-align: center;
+  margin: 110px 0 0 0;
+}
+/* .AddCardButton button {
+  width: 30px;
+} */
+.btn-warning {
+  margin: 0 0 0 5px;
+}
+.btn-danger {
+  margin: 0 0 0 5px;
+}
+/* ---------------------pages--------------------- */
+#article-detail {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+.banner-page {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35em;
+  text-align: center;
+  align-items: center;
+}
+.banner-page h1 {
+  font-size: 4em;
+  font-weight: 500;
+  padding: 15% 0 0 0;
+  margin: 0 4em 0 4em;
+  color: white;
+}
+.banner-page p {
+  font-size: 2em;
+  margin: 0 4em 0 4em;
+}
+.detailed-text {
+  margin: 3em 0 0 0;
+  text-align: justify;
+  font-size: 1.2em;
+  line-height: 35px;
+}
+/* ------------------- */
+.form-edit {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+  text-align: -webkit-center;
+  margin-top: 4em;
+}
+.form-edit button {
+  margin: 10px 0 0 0;
+}
+#buttonScroll {
+  border: none;
+  border-radius: 30px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  font-size: 1.6em;
+  margin: 0 10px 28px 0;
+  font-family: 'Kaushan Script', cursive;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+.fixed-bottom {
+  text-align: end;
+}
+.nav-footer {
+  justify-content: space-between;
+}
+.footer {
+  /* font-size: 1.3em; */
+  color: rgb(138, 135, 135);
+  font-family: 'Montserrat Alternates', sans-serif;
+  background-image: linear-gradient(to bottom, white, rgb(186, 183, 183));
+}

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/1be72bc652.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="admin.js"></script> -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="admin.html">Pulso al codigo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="admin.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Nosotros</a>
+                    </li>
+
+                    <li class="nav-new-article">
+                        <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">
+                            <i class="fa-regular fa-newspaper"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-regular fa-envelope"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-github-alt"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="banner">
+        <div class="container-fluid">
+            <div class="row banner-content justify-content-center">
+                <div class="col-7">
+                    <h1>ES HORA DE <br>PROGRAMAR</h1>
+                    <p>¡BIENVENIDOS A MI BLOG! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+                        dolores. Harum dolorum incidunt laborum delectus sapiente nemo libero necessitatibus, beatae
+                        pariatur, quas ipsam ex soluta tempore veniam deserunt voluptatibus accusamus dolores ipsum.
+                        Excepturi </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-4 mb-4">
+            <div class="col">
+                <div class="news">
+                    <div class="card">
+                        <div class="bg-image" style="background-image: url('img/image1.webp');">
+                            <div class="card-body" editText="true">
+                                <h6 class="card-subtitle mb-2 text-muted">GUIA</h6>
+                                <h5 class="card-title">¿Cómo crear un artículo?</h5>
+                                <p class="card-text">Para crear un artículo primero debes hacer clic en el icono " <i
+                                        class="fa-regular fa-newspaper"></i> " ubicado
+                                    en la barra, luego te aparecerá un formulario cuyos campos debes llenar ingresando
+                                    categoría del artículo, título, una imagen (ubicadas en la carpeta "img
+                                    " del proyecto) y por último el cuerpo del artículo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="story">
+                    <div class="card">
+                        <div class="bg-image" style="background-image: url('img/image4.webp');">
+                            <div class="card-body" editText="true">
+                                <h6 class="card-subtitle mb-2 text-muted">GUIA</h6>
+                                <h5 class="card-title">¿Cómo editar o eliminar artículos?</h5>
+                                <p class="card-text">Cada artículo creado tendrá un botón amarillo con el icono " <i
+                                        class="fa-solid fa-pencil"></i> " este
+                                    llevara a una pagina donde se podrán editar el nuevo contenido del artículo. Para
+                                    eliminar presiona el botón rojo con el icono " <i class="fa-solid fa-trash"></i> " y
+                                    el artículo será borrado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-4" id="itemsContainer">
+
+        </div>
+    </div>
+    <!-- formulario para creacion de articulo -->
+    <div class="form-make-article">
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+            aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-header">
+                <h4 class="offcanvas-title" id="offcanvasBottomLabel">Creación de artículo:</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body small">
+                <form class="row g-3 needs-validation" id="form" novalidate>
+                    <div class="col-md-4">
+                        <div class="input-group input-group-sm mb-1 mt-2">
+                            <span class="input-group-text">Categoría</span>
+                            <input type="text" class="form-control" id="category" maxlength="10"
+                                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group input-group-sm mb-1 mt-2">
+                            <span class="input-group-text">Título</span>
+                            <input type="text" class="form-control" id="title" maxlength="100"
+                                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                    </div>
+                    <div class=" col-md-3 mt-4">
+                        <input class="form-control form-control-sm" id="formFileSm" type="file">
+                    </div>
+                    <button type="submit" class="btn btn-light col-md-1" id="createArticle">Publicar</button>
+                    <div class="input-group input-group-sm mb-1 mt-2">
+                        <span class="input-group-text" id="contentLabel">Contenido</span>
+                        <textarea class="form-control" id="content" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="justify-content-end fixed-bottom">
+        <button type="button" class="btn btn-outline-dark " id="buttonScroll">Subir</button>
+    </div>
+    <ul class="nav justify-content-center footer fixed-bottom">
+        <li class="nav-item">
+            <p>Descubre Explora Aprende Inspirate</p>
+        </li>
+    </ul>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
