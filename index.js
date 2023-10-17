@@ -6,12 +6,12 @@ const inputTextContent = document.getElementById('content');
 const itemsContainer = document.getElementById('itemsContainer');
 
 const images = [
-  'img/image1.jpg',
-  'img/image2.jpg',
-  'img/image3.jpg',
-  'img/image4.jpg',
-  'img/image5.jpg',
-  'img/image6.jpg',
+  'img/image1.webp',
+  'img/image2.webp',
+  'img/image3.webp',
+  'img/image4.webp',
+  'img/image5.webp',
+  'img/image6.webp',
 ];
 
 // trae el contador de ID desde el localStorage o crea uno nuevo
